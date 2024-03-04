@@ -1,0 +1,14 @@
+<ul>
+          <li><input type="radio" /></li>
+          <form ng-submit="addItem()">
+            <li><input type="text" id="text" class="text" ng-model="newItem"/>
+            </li></form>
+          
+        </ul>
+         <div class="div-show-tasks" ng-repeat="x in items">
+          <ul>
+            <li><input type="radio" /></li>
+            <li class="text-h4"></li>
+            <li class="close" ng-click="close($index)">X</li>
+          </ul>
+        </div>
