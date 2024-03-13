@@ -12,6 +12,7 @@ $scope.totalLength = $scope.items.length;
     if ($scope.newItem !== "") {
       $scope.items.push($scope.newItem);
       $scope.newItem = "";
+      console.log($scope.items);
       $scope.totalLength= $scope.items.length;
     }
   };

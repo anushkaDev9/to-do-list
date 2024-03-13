@@ -86,9 +86,10 @@ body {
   height: 2rem;
   top: 75%;
   left: 35%;
-  height: 20rem;
+  height: 13rem;
   color: hsl(234, 39%, 85%);
   box-shadow: hsl(234, 12%, 16%) 0px 5px 15px;
+  overflow: auto;
 }
 .tasks-display .div-show-tasks {
   height: 3.5rem;
@@ -99,7 +100,6 @@ body {
 }
 .div-show-tasks .input {
   width: 81%;
-    
 }
 .div-show-tasks .circle {
   margin-top: 85%;
@@ -128,9 +128,13 @@ body {
 .div-options {
   font-size: 15px;
   display: flex;
+  position: absolute;
+  background-color: hsl(235, 19%, 35%);
   text-transform: capitalize;
   cursor: pointer;
-  margin-top: 42.5%;
+  width: 30.5%;
+  margin-top: 12%;
+  margin-left: 35%;
   border-top: 2px solid hsl(234, 39%, 85%);
   height: 2.5rem;
 }
@@ -141,7 +145,6 @@ body {
   width: 54%;
   gap: 10px;
   height: 1rem;
-  
 }
 .all {
   width: 30%;
@@ -165,12 +168,63 @@ body {
   margin-left: -40%;
   margin-top: 25%;
 }
-.div-options .items-num {
-  width: 18%;
-}
+
 .items-num p {
   margin-top: 22%;
 }
 .div-clear p {
   margin-top: 16%;
+}
+@media screen and (max-width: 1442px) {
+  img {
+    width: 100%;
+    height: 16rem;
+    margin-top: -1%;
+  }
+  #header {
+    margin-left: -19%;
+  }
+  .icon-bright {
+    margin-top: -100%;
+  }
+
+  .tasks-add {
+    width: 80%;
+    height: 3rem;
+    margin-top: 0%;
+    margin-left: -29%;
+  }
+  .text {
+    height: 2.5rem;
+    font-size: 18px;
+    width: 130%;
+  }
+  .tasks-display {
+    width: 75%;
+    margin-left: -27%;
+    margin-top: 5%;
+  }
+
+  .div-show-tasks .circle {
+    margin-top: 50%;
+    margin-left: 13px;
+  }
+  .div-show-tasks .text-h4 {
+    margin-top: 11%;
+  }
+  .div-options {
+    margin-top: 15rem;
+    display: flex;
+    width: 76%;
+    margin-left: 9%;
+    margin-top: 30%;
+    display: block;
+  }
+  .items-num {
+    width: 40%;
+    margin-top: -4%;
+  }
+  .options-adi {
+    margin-top: 10%;
+  }
 }
